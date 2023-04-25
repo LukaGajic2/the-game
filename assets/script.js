@@ -6,6 +6,10 @@ const message = document.getElementById('result');
 const winScore = document.getElementById('wins');
 const lossScore = document.getElementById('losses');
 const tieScore = document.getElementById('ties');
+const moves = document.getElementById('move-area');
+const player = document.getElementById('player');
+const computer = document.getElementById('computer');
+const rockImage = document.getElementById('rock');
 
 /**
  * Variable for tracking the score and
@@ -24,6 +28,11 @@ function reset() {
     losses: 0,
     ties: 0,
   };
+  message.style.display = 'none';
+  winScore.innerHTML = 'Wins';
+  lossScore.innerHTML = 'Losses';
+  tieScore.innerHTML = 'Ties';
+  moves.style.display = 'none';
 }
 
 /**
@@ -53,9 +62,9 @@ function playerGame(playerResult) {
   let result = '';
 
   if (playerResult === 'rock') {
-		if (computerResult === 'rock') {
-			result = 'Tie';
-		}else if (computerResult === 'paper') {
+	if (computerResult === 'rock') {
+	  result = 'Tie';
+	}else if (computerResult === 'paper') {
       result = 'You Lose!';
   	}else if (computerResult === 'scissors') {
       result = 'You Win!';
@@ -116,6 +125,13 @@ function playerGame(playerResult) {
         result = 'Tie';
       }
     }
+
+		player.innerHTML = playerResult;
+		computer.innerHTML = computerResult;
+
+		/**
+		 * Count result and display message
+		 */
 		
 		if (result === 'You Win!') {
       score.wins += 1;
@@ -125,6 +141,7 @@ function playerGame(playerResult) {
       score.ties += 1;
     }
 		
+		moves.style.display = 'block';
 		message.innerHTML = result;
 		winScore.innerHTML = `Wins ${score.wins}`;
 		lossScore.innerHTML = `Losses ${score.losses}`;

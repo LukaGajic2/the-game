@@ -8,28 +8,35 @@
   <title>The Game</title>
 </head>
 <body>
-  <main>
-    <heading id="heading">
-      <h1 id="header"> Rock Paper Scissors Lizard Spock</h1>
-    </heading>
-    <div id="game-area">
-      <button aria-label="rock" onclick="playerGame('rock')">Rock</button>
-      <button aria-label="paper" onclick="playerGame('paper')">Paper</button>
-      <button aria-label="scissors" onclick="playerGame('scissors')">Scissors</button>
-      <button aria-label="lizard" onclick="playerGame('lizard')">Lizard</button>
-      <button aria-label="spock" onclick="playerGame('spock')">Spock</button>
-      <button onclick="reset();">start again</button>
-    </div>
-    <div id="score-area">
-      <p id="result"></p>
-      <p id="wins">Wins</p>
-      <p id="losses">Losses</p>
-      <p id="ties">Ties</p>
-    </div>
-    <footer>
-      <p>for education purposes only. and fun!</p>
-    </footer>
-  </main>
+    <main>
+        <heading id="heading">
+          <h1 id="header"> Rock Paper Scissors Lizard Spock</h1>
+        </heading>
+        <div id="game-area">
+          <button 
+            id="rock" aria-label="rock" onclick="playerGame('rock')">
+            <img src="assets/images/rock-emoji.png">
+          </button>
+          <button aria-label="paper" onclick="playerGame('paper')">Paper</button>
+          <button aria-label="scissors" onclick="playerGame('scissors')">Scissors</button>
+          <button aria-label="lizard" onclick="playerGame('lizard')">Lizard</button>
+          <button aria-label="spock" onclick="playerGame('spock')">Spock</button>
+          <button onclick="reset();">start again</button>
+        </div>
+        <div id='move-area'>
+          <p id="player">your move</p>
+          <p id="computer">computer move</p>
+        </div>
+        <div id="score-area">
+          <p id="result"></p>
+          <p id="wins">Wins</p>
+          <p id="losses">Losses</p>
+          <p id="ties">Ties</p>
+        </div>
+        <footer>
+          <p>for education purposes only. and fun!</p>
+        </footer>
+      </main>
     
     <script src="assets/script.js"></script>
     
