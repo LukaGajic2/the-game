@@ -4,41 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="assets/style.css" rel="stylesheet" >
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>The Game</title>
 </head>
-<body>
-    <main>
-        <heading id="heading">
-          <h1 id="header"> Rock Paper Scissors Lizard Spock</h1>
-        </heading>
-        <div id="game-area">
-          <button 
-            id="rock" aria-label="rock" onclick="playerGame('rock')">
-            <img src="assets/images/rock-emoji.png">
-          </button>
-          <button aria-label="paper" onclick="playerGame('paper')">Paper</button>
-          <button aria-label="scissors" onclick="playerGame('scissors')">Scissors</button>
-          <button aria-label="lizard" onclick="playerGame('lizard')">Lizard</button>
-          <button aria-label="spock" onclick="playerGame('spock')">Spock</button>
-          <button onclick="reset();">start again</button>
-        </div>
-        <div id='move-area'>
-          <p id="player">your move</p>
-          <p id="computer">computer move</p>
-        </div>
-        <div id="score-area">
-          <p id="result"></p>
-          <p id="wins">Wins</p>
-          <p id="losses">Losses</p>
-          <p id="ties">Ties</p>
-        </div>
-        <footer>
-          <p>for education purposes only. and fun!</p>
-        </footer>
-      </main>
+<body
+  <heading id="heading">
+    <h1 id="header">Rock Paper Scissors Lizard Spock</h1>
+  </heading>
+  <main>
+    <div id="game-area">
+      <button id="rock" aria-label="rock" onclick="playerGame('rock')" class="move-button">
+        <img id="rock-image" src="assets/images/rock-image.png" class="move-icon">
+      </button>
+      <button id="paper" aria-label="paper" onclick="playerGame('paper')" class="move-button">
+        <img id="paper-image" src="assets/images/paper-image.png" class="move-icon">
+      </button>
+      <button id="scissors" aria-label="scissors" onclick="playerGame('scissors')" class="move-button">
+        <img id="scissors-image" src="assets/images/scissors-image.png" class="move-icon">
+      </button>
+      <button id="lizard" aria-label="lizard" onclick="playerGame('lizard')" class="move-button">
+        <img id="lizard-image" src="assets/images/lizard-image.png" class="move-icon">
+      </button>
+      <button id="spock" aria-label="spock" onclick="playerGame('spock')" class="move-button">
+        <img id="spock-image" src="assets/images/spock-image.png" class="move-icon">
+      </button> 
+    </div>
+    <div id='move-area'>
+      <p id="player"></p>
+      <p id="computer"></p>
+    </div>
+    <p id="result"></p>
+    <div id="score-area">
+      <p id="wins">Wins</p>
+      <p id="losses">Losses</p>
+      <p id="ties">Ties</p>
+    </div>
+    <div id="reset-div">
+      <button id="reset-btn" onclick="reset();">start again</button>
+    </div>
     
-    <script src="assets/script.js"></script>
-    
+  </main>
+  <footer>
+    <p>for education purpose only. and FUN!</p>
+  </footer>
+
+  <script src="assets/javascript/script.js"></script>
+
 </body>
 </html>

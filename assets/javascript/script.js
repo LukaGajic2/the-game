@@ -62,9 +62,9 @@ function playerGame(playerResult) {
   let result = '';
 
   if (playerResult === 'rock') {
-	if (computerResult === 'rock') {
+		if (computerResult === 'rock') {
 	  result = 'Tie';
-	}else if (computerResult === 'paper') {
+		}else if (computerResult === 'paper') {
       result = 'You Lose!';
   	}else if (computerResult === 'scissors') {
       result = 'You Win!';
@@ -74,9 +74,9 @@ function playerGame(playerResult) {
       result = 'You Lose!';
     }
 
-		}else if (playerResult === 'paper') {
-			if (computerResult === 'rock') {
-				result = 'You Lose!';
+	}else if (playerResult === 'paper') {
+	  if (computerResult === 'rock') {
+		result = 'You Lose!';
       }else if (computerResult === 'paper') {
        	result = 'Tie';
       }else if (computerResult === 'scissors') {
@@ -126,8 +126,8 @@ function playerGame(playerResult) {
       }
     }
 
-		player.innerHTML = playerResult;
-		computer.innerHTML = computerResult;
+		player.innerHTML = `<img src="assets/images/${playerResult}-image.png" class="result-icon"></img>`;
+		computer.innerHTML =`<img src="assets/images/${computerResult}-image.png" class="result-icon"></img>`;
 
 		/**
 		 * Count result and display message
@@ -141,15 +141,11 @@ function playerGame(playerResult) {
       score.ties += 1;
     }
 		
-		moves.style.display = 'block';
+		moves.style.display = 'flex';
 		message.innerHTML = result;
+		message.style.display = 'flex';
 		winScore.innerHTML = `Wins ${score.wins}`;
 		lossScore.innerHTML = `Losses ${score.losses}`;
 		tieScore.innerHTML = `Ties ${score.ties}`;
 
-		
-    console.log(playerResult);
-    console.log(computerResult);
-    console.log(`${result}`);
-    console.log(score);
 }
