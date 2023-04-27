@@ -1,13 +1,14 @@
 
 body {
-	margin: 0;
+  margin: 0;
   background-color: rgb(21, 21, 167);
 }
+
 h1 {
   width:100;
   text-align: center;
-	font-family:Arial, Helvetica, sans-serif;
-	color: aliceblue;
+  font-family:Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
 
 /*game area style and move buttons*/
@@ -17,6 +18,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 .move-button {
   background-color: transparent;
   border: 2px solid yellow;
@@ -26,6 +28,7 @@ h1 {
   cursor: pointer;
   margin-right: 10px;
 }
+
 .move-icon {
   height: 50px;
 }
@@ -34,10 +37,11 @@ h1 {
 
 #move-area {
   width: 75;
-	display: flex;
+  display: flex;
   justify-content: center;
   margin-top: 5px;
 }
+
 .result-icon {
   height: 10rem;
 }
@@ -46,48 +50,49 @@ h1 {
 
 #result {
   text-align: center;
-	font-size: 60px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	margin: 5px;
-	color: aliceblue;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  color: aliceblue;
 }
+
 #score-area {
-	width: 75%;
+  width: 75%;
   text-align: center;
   display: flex;
   justify-content: space-around;
-	margin: auto;
-	color: yellow;
+  margin: auto;
+  color: yellow;
 }
 
 /*reset button*/
 
 #reset-div {
-	text-align: center;
-	margin-top: 5px;
-}
-#reset-btn {
-	width: auto;
-	border: 2px solid yellow;
-	border-radius: 10px;
-	font-size: 25px;
-	background-color: black;
-	color: yellow;
+  text-align: center;
+  margin-top: 5px;
 }
 
+#reset-btn {
+  width: auto;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: black;
+  color: yellow;
+}
 
 /*footer*/
 
 footer {
-	position: absolute;
+  position: absolute;
   width: 100%;
-	left: 0;
-	bottom: 0;
-	box-sizing: border-box;
-	min-height: 30px;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  min-height: 30px;
   text-align: center;
   color: rgb(21, 21, 167);
   background-color: yellow;
