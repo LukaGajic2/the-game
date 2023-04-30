@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  width:100;
+  width:100%;
   text-align: center;
   font-family:Arial, Helvetica, sans-serif;
   color: aliceblue;
@@ -14,7 +14,7 @@ h1 {
 /*game area style and move buttons*/
 
 #game-area {
-  width: 75;
+  width: 75%;
   display: flex;
   justify-content: center;
 }
@@ -36,7 +36,7 @@ h1 {
 /*move area and choosen move icons*/
 
 #move-area {
-  width: 75;
+  width: 75%;
   display: flex;
   justify-content: center;
   margin-top: 5px;
