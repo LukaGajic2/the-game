@@ -4,6 +4,10 @@ body {
   background-color: rgb(21, 21, 167);
 }
 
+main {
+  margin-bottom: 30px;
+}
+
 h1 {
   width:100%;
   text-align: center;
@@ -100,12 +104,13 @@ h1 {
 /*footer*/
 
 footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
   box-sizing: border-box;
-  min-height: 30px;
+  max-height: 30px;
+  margin: 2px auto;
   text-align: center;
   color: rgb(21, 21, 167);
   background-color: yellow;
