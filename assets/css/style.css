@@ -110,8 +110,11 @@ footer {
   bottom: 0;
   box-sizing: border-box;
   max-height: 30px;
-  margin: 2px auto;
   text-align: center;
   color: rgb(21, 21, 167);
   background-color: yellow;
+}
+
+#fun {
+  margin: 2px auto;
 }
