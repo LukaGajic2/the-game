@@ -9,7 +9,7 @@ const tieScore = document.getElementById('ties');
 const moves = document.getElementById('move-area');
 const player = document.getElementById('player');
 const computer = document.getElementById('computer');
-const rockImage = document.getElementById('rock');
+
 
 /**
  * Variable for tracking the score and
@@ -19,7 +19,7 @@ const rockImage = document.getElementById('rock');
 let score = {
 	wins: 0,
   	losses: 0,
-  	ties: 0
+  	ties: 0,
 }
 
 function reset() {
