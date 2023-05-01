@@ -5,7 +5,6 @@
 
 It is a simple game suitable for both children and adults. And it should help them to make decisions as well in game as well in real life.
 
-![Alt text](/assets/images/amiresponsive-screenshot.png "Am i Responsive")
 
 
 
