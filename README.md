@@ -16,43 +16,43 @@ It is a simple game suitable for both children and adults. And it should help th
 
 ![Alt text](/assets/images/heading.png "header")
 
-+ Header contains simply name of the game.
-+ It contains also short instructions on how to play the game.
+    + Header contains simply name of the game.
+    + It contains also short instructions on how to play the game.
 
 ## Game Area
 
 
 ![Alt text](/assets/images/game-area.png "game area")
 
-+ Game area contains hand-emoji who represent hand signs for each of choices.
-+ It is build as interactive button for user to click on it and 'make' a move.
+    + Game area contains hand-emoji who represent hand signs for each of choices.
+    + It is build as interactive button for user to click on it and 'make' a move.
 
 ## Move Area
 
 
 ![Alt text](/assets/images/move-area.png "move area")
 
-+ It is hidden in the beginning of game as neither player or computer have make the first move.
-+ As player choose and click on one of the icons the choosen move will be represented in "move area" on the left side along with computers move on the right side.
-+ The bold text will display the result after it compare within JS code('You Win', 'You Lose' or 'Tie').
+    + It is hidden in the beginning of game as neither player or computer have make the first move.
+    + As player choose and click on one of the icons the choosen move will be represented in "move area" on the left side along with computers move on the       right side.
+    + The bold text will display the result after it compare within JS code('You Win', 'You Lose' or 'Tie').
 
 ## Score Area
 
 ![Alt text](/assets/images/score-area.png "score area")
 
-+ It contains three fields "Wins", "Losses" and "Ties" and it updates after every move according to achieved result.
+    + It contains three fields "Wins", "Losses" and "Ties" and it updates after every move according to achieved result.
 
 ## Start Again button
 
-+ By pressing "Start Again" button player reset the game and score and can start from the beginning.
+    + By pressing "Start Again" button player reset the game and score and can start from the beginning.
 
 
 # Testing
 
 
-+ I have tested and confirm that game works in different browsers.
-+ The responsivness is good on all standard screen sizes and it looks good.
-+ All buttons works and result is always correct.
+    + I have tested and confirm that game works in different browsers.
+    + The responsivness is good on all standard screen sizes and it looks good.
+    + All buttons works and result is always correct.
 
 
 # Validation
@@ -68,7 +68,7 @@ It is a simple game suitable for both children and adults. And it should help th
 ![Alt text](/assets/images/CSScheck.png "CSS check")
 
 + JSHint
-    - 18 warnings as result when testing in JSHint that warns about different versions of JS.
+    - 18 warnings as result when testing in JSHint that warns about possible different versions of JS used.
 
 ![Alt text](/assets/images/JSHintcheck.png "JSHint check")
 
